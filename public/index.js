@@ -1,54 +1,54 @@
-//Size Selector
-
-$('.XL').on('click', function () {$(this).closest('.size').find('.sizeText').text('XL')});
-
-$('.L').on('click', function () {$(this).closest('.size').find('.sizeText').text('L')});
-
-$('.M').on('click', function () {$(this).closest('.size').find('.sizeText').text('M')});
-
-$('.S').on('click', function () {$(this).closest('.size').find('.sizeText').text('S')});
-
-
-//Color Selector
-
-$('.blue-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/blue-front.png');
-$(this).parent().next().css('background-color', '#80bbe5')});
-
-//Pink Color
-
-$('.pink-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/pink-front.png');
-$(this).parent().next().css('background-color', '#e276a7')});
-
-//Orange Color
-
-$('.orange-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/yellow-front.png');
-$(this).parent().next().css('background-color', '#e4b177')});
-
-//Green Color
-
-$('.green-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/green-front.png');
-$(this).parent().next().css('background-color', '#8bb992')});
-
-
-
 //Adding Items and price to Shopping Cart
 
-
 $('.buy').on('click', function () {
-  $.get(`http://localhost:3000/shirts/${test}`, function(data) {
-    console.log(data);
+  $.get('http://localhost:3000/shirts/'+ $(this).attr('id'), function(data) {
     let $ul = $('.cart');
     let $li = `<li>${data.name} ${data.price}</li>`
     $ul.append($li);
-
+    let $shirtPrice = parseInt(data.price);
+    let $cartPrice = parseInt($("#total").text());
+    let $test = $('#total');
+    $cartPrice += $shirtPrice;
+    $test.text($cartPrice);
+    //cartLimit();
   })
-  //let $shirtPrice = parseInt($(this).parent().next().find('.price').text());
-  //let $cartPrice = parseInt($("#total").text());
-  //let $test = $('#total');
-  //$cartPrice += $shirtPrice;
-  //$test.text($cartPrice);
-  cartLimit();
 })
+
+
+// //Size Selector
+//
+// $('.XL').on('click', function () {$(this).closest('.size').find('.sizeText').text('XL')});
+//
+// $('.L').on('click', function () {$(this).closest('.size').find('.sizeText').text('L')});
+//
+// $('.M').on('click', function () {$(this).closest('.size').find('.sizeText').text('M')});
+//
+// $('.S').on('click', function () {$(this).closest('.size').find('.sizeText').text('S')});
+//
+//
+// //Color Selector
+//
+// $('.blue-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/blue-front.png');
+// $(this).parent().next().css('background-color', '#80bbe5')});
+//
+// //Pink Color
+//
+// $('.pink-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/pink-front.png');
+// $(this).parent().next().css('background-color', '#e276a7')});
+//
+// //Orange Color
+//
+// $('.orange-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/yellow-front.png');
+// $(this).parent().next().css('background-color', '#e4b177')});
+//
+// //Green Color
+//
+// $('.green-option').on('click', function() {$(this).closest('article').find('.t-shirt').attr('src', 'shirts/green-front.png');
+// $(this).parent().next().css('background-color', '#8bb992')});
+//
+
+
+//Adding Items and price to Shopping Cart
 
 
 
