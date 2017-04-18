@@ -53,47 +53,47 @@ $('.buy').on('click', function () {
 
 
 //Limit of 8 of each individual shirt
-
-let saveShirt = 0;
-let natureShirt = 0;
-let forrestShirt = 0;
-
-function cartLimit () {
-
-  let cartIcon = event.target;
-  let shirt = cartIcon.dataset.shirt;
-
-  if (shirt === "Save my Trees") {
-    saveShirt++;
-    if (saveShirt >= 8) {
-      sold1.style.display ='block';
-    }
-
-  } else if (shirt === "Nature Lover") {
-    natureShirt++;
-    if (natureShirt >= 8) {
-      sold2.style.display ='block';
-  }
-
-  } else {
-    forrestShirt++;
-    if (forrestShirt >= 8) {
-      sold3.style.display ='block';
-    }
-  }
-}
-
-
-
-//5% discount after five or more shirts
-
-//work in progress
-
-let shirtCounter = 0;
-
-function cartDiscount (event) {
-
-  if (cartAdd() >= 5) {
-    console.log("discount");
-  }
-}
+//
+// let saveShirt = 0;
+// let natureShirt = 0;
+// let forrestShirt = 0;
+//
+// function cartLimit () {
+//
+//   let cartIcon = event.target;
+//   let shirt = cartIcon.dataset.shirt;
+//
+//   if (shirt === "Save my Trees") {
+//     saveShirt++;
+//     if (saveShirt >= 8) {
+//       sold1.style.display ='block';
+//     }
+//
+//   } else if (shirt === "Nature Lover") {
+//     natureShirt++;
+//     if (natureShirt >= 8) {
+//       sold2.style.display ='block';
+//   }
+//
+//   } else {
+//     forrestShirt++;
+//     if (forrestShirt >= 8) {
+//       sold3.style.display ='block';
+//     }
+//   }
+// }
+//
+//
+//
+// //5% discount after five or more shirts
+//
+// //work in progress
+//
+// let shirtCounter = 0;
+//
+// function cartDiscount (event) {
+//
+//   if (cartAdd() >= 5) {
+//     console.log("discount");
+//   }
+// }
