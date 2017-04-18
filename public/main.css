@@ -1,0 +1,292 @@
+main {
+  background-color: white;
+  margin: 0px auto;
+  width: 100%;
+  font-family: 'Comfortaa', sans-serif;
+  color: #5ea5d8;
+  margin-top: 100px;
+}
+
+article {
+  margin: auto;
+}
+
+article img {
+  width: 300px;
+  border: 3px solid #5ea5d8;
+  border-bottom: none;
+  padding: 20px;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  display: flex;
+  border: 2px solid #5ea5d8;
+  position: relative;
+  margin: 0rem;
+  bottom: 7px;
+  left: 44.4px;
+  width: 342px;
+}
+
+footer .refresh, .favorite, .size, .color, .buy  {
+  display: inline-block;
+  width: 20%;
+  border: 1px solid #5ea5d8;
+  padding: 15px 24px;
+}
+
+ p {
+  font-size: 1.4rem;
+  position: relative;
+  bottom: 20%;
+  left: 13%;
+}
+
+section p .price {
+  position: relative;
+  left: 30%;
+}
+
+.refresh:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+
+.favorite:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+
+.size:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+
+.color:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+
+}
+
+.buy:hover {
+  background-color: #5ea5d8;
+  color: white;
+  cursor: pointer;
+}
+
+#color1 {
+  width: 20px;
+  height: 20px;
+  background-color: #80bbe5;
+  border: 2px solid white;
+}
+
+#color2 {
+  width: 20px;
+  height: 20px;
+  background-color: #e276a7;
+  border: 2px solid white;
+}
+
+#color3 {
+  width: 20px;
+  height: 20px;
+  background-color: #e4b177;
+  border: 2px solid white;
+}
+
+.fa-repeat:before {
+    content: "\f01e";
+    position: relative;
+    bottom: 305px;
+    left: 350px;
+    border: 3px solid;
+    padding: 10px;
+}
+
+.spin {
+  border-left: 3px solid #5ea5d8;
+  border-right: 3px solid #5ea5d8;
+  position: relative;
+  bottom: 4px;
+}
+
+.size-box {
+  width: 85px;
+  height: 180px;
+  position: absolute;
+  border: 2px solid #5ea5d8;
+  background-color: white;
+  bottom: 58px;
+  right: 127px;
+  opacity: 0.0;
+}
+
+.size:hover .size-box {
+  transition-duration: 0.5s;
+  opacity: 1.0;
+}
+
+.color-box {
+  opacity: 0.0;
+  width: 88px;
+  height: 88px;
+  position: absolute;
+  border: 2px solid #5ea5d8;
+  background-color: white;
+  bottom: 58px;
+  right: 53px;
+}
+
+.color:hover .color-box {
+  transition-duration: 0.5s;
+  opacity: 1.0;
+}
+
+.size-box .XL {
+  border: none;
+  width: 42px;
+  height: 36px;
+}
+
+.size-box .L {
+  position: relative;
+  bottom: 50px;
+  left: 3px;
+  border: none;
+  width: 37px;
+  height: 31px;
+}
+
+.size-box .M {
+  position: relative;
+  bottom: 85px;
+  left: 5px;
+  border: none;
+  width: 32px;
+  height: 26px;
+}
+
+.size-box .S {
+  position: relative;
+  bottom: 118px;
+  left: 7px;
+  border: none;
+  width: 27px;
+  height: 21px;
+}
+
+.size-box .letterXL {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 57px;
+  left: 35px;
+  border: none;
+  font-size: 0.5rem;
+}
+
+.size-box .letterL {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 83px;
+  left: -38px;
+  border: none;
+  font-size: 0.4em;
+}
+
+.size-box .letterM {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 114px;
+  left: -35px;
+  border: none;
+  font-size: 0.3em;
+}
+
+.size-box .letterS {
+  color: #5ea5d8;
+  position: relative;
+  bottom: 147px;
+  left: -30px;
+  border: none;
+  font-size: 0.2em;
+}
+
+.color-box .blue-option {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #80bbe5;
+}
+
+.color-box .pink-option {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  color: #d48299;
+}
+
+.color-box .orange-option {
+  position: absolute;
+  top: 47px;
+  left: 10px;
+  color: #dcb07d;
+}
+
+.color-box .green-option {
+  position: absolute;
+  top: 47px;
+  left: 50px;
+  color: #8bb992;
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 500px;
+}
+
+#sold1 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+#sold2 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
+}
+
+#sold3 {
+  width: 65px;
+  height: 55px;
+  background-color: gray;
+  position: absolute;
+  left: 278px;
+  opacity: 0.4;
+  display: none;
+  color: white;
+  text-align: center;
+}

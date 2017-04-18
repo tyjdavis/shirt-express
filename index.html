@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>T-Shirt Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <main>
+      <article>
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+        <img class="t-shirt" src="shirts/blue-front.png" />
+          <footer>
+            <span class="refresh"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+            <span class="favorite"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+            <span class="size">
+              <div class="size-box">
+                <img class="XL" src="shirts/tshirt.svg"/><span class="letterXL">XL</span>
+                <img class="L" src="shirts/tshirt.svg" /><span class="letterL">L</span>
+                <img class="M" src="shirts/tshirt.svg" /><span class="letterM">M</span>
+                <img class="S" src="shirts/tshirt.svg" /><span class="letterS">S</span>
+              </div>
+              <span class="sizeText">XL</span>
+            </span>
+            <span class="color">
+              <div class="color-box">
+                <span class="blue-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+                <span class="pink-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+                <span class="orange-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+                <span class="green-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              </div>
+              <div id="color1"></div>
+            </span>
+            <span data-shirt="Save my Trees" class="buy"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <div id="sold1">SOLD OUT</div>
+          </footer>
+          <section>
+            <p>Save my Trees <span class="price">29</span></p>
+          </section>
+      </article>
+      <article>
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+        <img class="t-shirt" src="shirts/pink-front.png" />
+        <footer>
+          <span class="refresh"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+          <span class="favorite"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+          <span class="size">
+            <div class="size-box">
+              <img class="XL" src="shirts/tshirt.svg"/><span class="letterXL">XL</span>
+              <img class="L" src="shirts/tshirt.svg" /><span class="letterL">L</span>
+              <img class="M" src="shirts/tshirt.svg" /><span class="letterM">M</span>
+              <img class="S" src="shirts/tshirt.svg" /><span class="letterS">S</span>
+            </div>
+           <span class="sizeText">XL</span>
+          </span>
+          <span class="color">
+            <div class="color-box">
+              <span class="blue-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="pink-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="orange-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="green-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+            </div>
+            <div id="color2"></div>
+          </span>
+          <span data-shirt="Nature Lover" class="buy"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+          <div id="sold2">SOLD OUT</div>
+        </footer>
+        <section>
+          <p>Nature Lover <span class="price">19</span></p>
+        </section>
+      </article>
+      <article>
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+        <img class="t-shirt" src="shirts/yellow-front.png"/>
+        <footer>
+          <span class="refresh"><i class="fa fa-exchange" aria-hidden="true"></i></span>
+          <span class="favorite"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+          <span class="size">
+            <div class="size-box">
+              <img class="XL" src="shirts/tshirt.svg"/><span class="letterXL">XL</span>
+              <img class="L" src="shirts/tshirt.svg" /><span class="letterL">L</span>
+              <img class="M" src="shirts/tshirt.svg" /><span class="letterM">M</span>
+              <img class="S" src="shirts/tshirt.svg" /><span class="letterS">S</span>
+            </div>
+          <span class="sizeText">XL</span>
+          </span>
+          <span class="color">
+            <div class="color-box">
+              <span class="blue-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="pink-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="orange-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+              <span class="green-option"><i class="fa fa-square fa-2x" aria-hidden="true"></i></span>
+            </div>
+            <div id="color3"></div>
+          </span>
+          <span data-shirt="Forrest Walk" class="buy"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+          <div id="sold3">SOLD OUT</div>
+        </footer>
+        <section>
+          <p>Forrest Walk <span class="price">39</span></p>
+        </section>
+      </article>
+      <section class="shopping-cart">
+        <p>Shopping Cart: $<span id="total">0</span></p>
+        <ul class="cart">
+        </ul>
+      </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
